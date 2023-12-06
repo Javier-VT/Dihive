@@ -1,0 +1,143 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Geometr706 BlkCn BT', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    background-color: black;
+    width: 100%;
+    height: 12%;
+    text-align: center;
+    color: darkorange;
+    margin: 20px 0;
+}
+
+h2 {
+    background-color: black;
+    width: 100%;
+    height: 8%;
+    font-size: 40px;
+    animation: fade 2s;
+}
+
+h3 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 8%;
+    font-size: 40px;
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.hide {
+    display: none;
+}
+
+.game {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/images/bg.gif');
+    background-repeat: repeat;
+    background-size: 110% 110%;
+    filter: brightness(70%);
+}
+
+button {
+    width: 120px;
+    height: 60px;
+    background-color: black;
+    position: relative;
+    margin: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Geometr706 BlkCn BT', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+
+.start {
+    position: absolute;
+    background-color: orangered;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    width: 30%;
+    font-size: 2.2em;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.level button {
+    padding: 7px;
+    font-size: 0.9em;
+    background: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 225px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+    .level button:hover {
+        background-color: white;
+        color: black;
+    }
+
+.correct-color {
+    color: green;
+}
+
+.incorrect-color {
+    color: red;
+}
